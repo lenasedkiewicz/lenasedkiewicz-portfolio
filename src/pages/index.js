@@ -9,6 +9,7 @@ const HomePage = () => {
                 pageTitle="Handcraft Heaven"
                 pageHeading="Crochet, half-cross stitch and decoupage"            >
             Welcome to my site! I share here photos of my work of arts.
+            <StaticImage src="./src/images" alt="Flowers in vase" />
             </Layout>
         </main>
     )
