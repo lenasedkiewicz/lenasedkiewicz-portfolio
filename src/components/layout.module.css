@@ -26,3 +26,8 @@
 .nav-link-text:hover {
     text-decoration: underline;
 }
+.page-header {
+    color: darkslategrey;
+    font-size: 2rem;
+    font-weight: 700;
+}
