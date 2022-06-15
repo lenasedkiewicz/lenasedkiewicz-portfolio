@@ -1,7 +1,7 @@
 import React from "react"
 import {
     Link,
-    useStaticQuery,
+    StaticQuery,
     graphql
 } from "gatsby"
 import {
@@ -13,7 +13,7 @@ import {
 } from "./layout.module.css"
 
 const Layout = ({ pageTitle, pageHeading, children }) => {
-    const data =useStaticQuery(graphql`
+    const data = StaticQuery(graphql`
     query PageTitleQuery {
         site {
           siteMetadata {
