@@ -6,7 +6,7 @@ const HomePage = () => {
     return (
         <main>
             <Layout
-                pageTitle="Handcraft Heaven"
+                pageTitle="Home"
                 pageHeading="Crochet, half-cross stitch and decoupage"            >
             Welcome to my site! I share here photos of my work of arts.
             <StaticImage
