@@ -1,23 +1,22 @@
-import React from "react"
-import Layout from "../components/layout"
-import { graphql } from "gatsby"
+import React from "react";
+import Layout from "../components/layout";
+import { graphql } from "gatsby";
 
-const Blog = ( data ) => {
-  console.log(data);
+const Blog = ({ data }) => {
   return (
-      <Layout pageTitle="Blog" pageHeading="Blog">
-        <ul>
-          {data.allFile.nodes.map((node) => {
-            return<li>{node.name}</li>;
-          })}
-        </ul>
-      </Layout>
-  )
+    <Layout pageTitle="Blog" pageHeading="Blog">
+      <ul>
+        {data?.allFile?.nodes.map((node) => {
+          return <li key={node.name}>{node.name}</li>;
+        })}
+      </ul>
+    </Layout>
+  );
 };
 
 export const query = graphql`
   query {
-    allFile(filter: {sourceInstanceName: {eq: "blog"}}) {
+    allFile(filter: { sourceInstanceName: { eq: "blog" }}) {
       nodes {
         name
       }
@@ -25,4 +24,4 @@ export const query = graphql`
   }
 `;
 
-export default Blog
+export default Blog;
