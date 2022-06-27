@@ -1,5 +1,6 @@
-import React from 'react'
-import Navbar from './Navbar'
+import React from "react";
+import Navbar from "./Navbar";
+import "../styles/global.css"
 
 export default function Layout({ children }) {
   return (
@@ -9,7 +10,7 @@ export default function Layout({ children }) {
           { children }
         </div>
         <footer>
-            <p>Copytight &copy; 2021 Lena Sedkiewicz</p>
+            <p>Copytight &copy; 2022 Lena Sedkiewicz</p>
         </footer>
     </div>
   )

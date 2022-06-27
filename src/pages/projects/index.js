@@ -1,5 +1,12 @@
-import React from "react"
+import React from "react";
+import ProjectsLayout from "../../components/ProjectsLayout"
 
 export default function Projects() {
-  return <div>Hi, it's project page</div>
+  return (
+    <ProjectsLayout>
+      <section>
+        <div>Hi, it's project page</div>
+      </section>
+    </ProjectsLayout>
+  )
 }
