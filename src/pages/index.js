@@ -1,13 +1,16 @@
 import React from "react"
 import Layout from "../components/Layout"
+import * as styles from "../styles/home.module.css"
 
 export default function Home() {
   return (
     <Layout>
-      <section>
-        <h1>Lena Sedkiewicz</h1>
-        <h2>WordPress Developer</h2>
-        <p>Creating and maintaining WordPress websites</p>
+      <section className={styles.header}>
+        <div>
+          <h2>Lena Sedkiewicz</h2>
+          <h3>WordPress Developer</h3>
+          <p>Creating and maintaining WordPress websites</p>
+        </div>
       </section>
     </Layout>
   )
