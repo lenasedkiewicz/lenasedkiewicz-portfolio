@@ -8,7 +8,6 @@ export default function Projects() {
       <section className={styles.portfolio}>
         <h2>Portfolio</h2>
         <h3>From created websites to learning projects.</h3>
-        <div>Hi, it's project page</div>
       </section>
     </ProjectsLayout>
   )
