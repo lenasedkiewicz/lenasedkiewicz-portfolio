@@ -5,7 +5,7 @@ export default function ProjectsNavbar() {
     return (
         <nav>
             <h1>Lena Sedkiewicz - Projects</h1>
-            <div className="nav_links">
+            <div className="nav-links">
                 <Link to="/">Home</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/projects/wordpress">WordPress websites</Link>

@@ -3,7 +3,7 @@ import ProjectsNavbar from "./ProjectsNavbar"
 
 export default function Layout({ children }) {
   return (
-    <div className="projects_layout">
+    <div className="projects-layout">
       <ProjectsNavbar />
         <div className="content">
           { children }
