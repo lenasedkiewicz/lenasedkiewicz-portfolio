@@ -6,7 +6,7 @@ const AboutPage = () => {
         <main>
             <Layout
                 pageTitle="About me"
-                pageHeading="Hi! I'm Lena!"
+                pageHeading="Hi! I'm Lena!"                
             >
                 I'm psychologist and a programmer, and I love crochet and other handcraft arts!
             </Layout>
