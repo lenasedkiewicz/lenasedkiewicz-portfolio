@@ -1,15 +1,15 @@
 import React from 'react'
 import Navbar from './Navbar'
 
-export default function Layout() {
+export default function Layout({ children }) {
   return (
     <div className="layout">
-      <Navbar></Navbar>
+      <Navbar />
         <div className="content">
-            {/* content for each page */ }
+          { children }
         </div>
         <footer>
-            Copytight &copy; 2021 Lena Sedkiewicz
+            <p>Copytight &copy; 2021 Lena Sedkiewicz</p>
         </footer>
     </div>
   )
