@@ -13,6 +13,7 @@ export default function Home() {
           <p>Creating and maintaining WordPress websites</p>
         </div>
         <Link className={styles.btn} to="/projects">My Portfolio Projects</Link>
+        <img src="/banner.png" alt="Site banner" style={{ maxWidth: '100%' }} />
       </section>
     </Layout>
   )
