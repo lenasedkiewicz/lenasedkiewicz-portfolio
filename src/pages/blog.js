@@ -10,6 +10,7 @@ const Blog = ({ data }) => {
         return <article key={node.id}>
           <h2>{node.frontmatter.title}</h2>
           <p>{node.frontmatter.date}</p>
+          <p>Modified: {node.parent.modifiedTime}</p>
           <MDXRenderer>{node.body}</MDXRenderer>
           </article>;
       })}
@@ -27,6 +28,16 @@ export const query = graphql`
         }
         id
         body
+        parent {
+          internal {
+            type
+          }
+          ... on File {
+            id
+            name
+            modifiedTime(formatString: "dddd, Do MMMM YYYY")
+          }
+        }
       }
     }
   }
