@@ -3,7 +3,8 @@ import React from "react";
 import Layout from "../components/Layout";
 import * as styles from "../styles/home.module.css";
 
-export default function Home() {
+export default function Home({ data }) {
+  const { title, description } = data.site.siteMetadata
   return (
     <Layout>
       <section className={styles.header}>
@@ -15,6 +16,7 @@ export default function Home() {
         <Link className={styles.btn} to="/projects">My Portfolio Projects</Link>
         <img src="/banner.png" alt="Site banner" style={{ maxWidth: '100%' }} />
       </section>
+      <p>{ title } - { description }</p>
     </Layout>
   )
 }
