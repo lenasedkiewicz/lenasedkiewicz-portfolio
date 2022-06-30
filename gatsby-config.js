@@ -10,6 +10,6 @@ module.exports = {
   siteMetadata: {
     title: 'Lena Sedkiewicz',
     description: 'Your WordPress Developer',
-    copyright: 'Copyright 2022 by Lena Sedkiewicz'
+    copyright: 'Copyright 2022 by Lena Sedkiewicz',
   }
 }
