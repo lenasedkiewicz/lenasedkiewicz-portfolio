@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectsNavbar from "./ProjectsNavbar"
 
-export default function Layout({ children }) {
+export default function ProjectsLayout({ children }) {
   return (
     <div className="projects-layout">
       <ProjectsNavbar />
