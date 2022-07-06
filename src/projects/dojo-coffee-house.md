@@ -4,7 +4,7 @@ stack: HTML & CSS
 slug: the-dojo-coffee-house
 date: 2022-07-04T12:25:31+00:00
 thumb: ../images/thumbs/coffee.png
-faturedImg: ../images/featured/coffee-banner.png
+featuredImg: ../images/featured/coffee-banner.png
 
 ---
 
