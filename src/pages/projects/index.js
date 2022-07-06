@@ -1,7 +1,8 @@
 import { graphql, Link } from "gatsby";
 import React from "react";
 import ProjectsLayout from "../../components/ProjectsLayout";
-import * as styles from "../../styles/projects.module.css"
+import * as styles from "../../styles/projects.module.css";
+import Img from "gatsby-image";
 
 export default function Projects({ data }) {
   const projects = data.projects.nodes
@@ -16,6 +17,7 @@ export default function Projects({ data }) {
           {projects.map(project => (
             <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
               <div>
+                <Img fluid={project.frontmatter.thumb.childImageSharp.fluid} />
                 <h3>{ project.frontmatter.title }</h3>
                 <p>{ project.frontmatter.stack }</p>
               </div>
@@ -38,11 +40,18 @@ query ProjectsPage {
         stack
         title
         date
+        thumb {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       id
     }
   }
-  contact: site{
+  contact: site {
     siteMetadata {
       contact
     }
