@@ -1,6 +1,5 @@
 const { ApolloServer, gql } = require("apollo-server");
 
-
 const typeDefs = gql`
   type Query {
     products: [Product!]!
@@ -16,8 +15,16 @@ const typeDefs = gql`
 
 const resolvers = {
   Query: {
-    hello: () => {
-      return ["Hello World!", "Witaj świecie!", "Bonjour le monde!"];
+    products: () => {
+      return [
+        {
+          name: "Bike",
+          description: "Mountain Bike",
+          quantity: 20,
+          price: 999.97,
+          onSale: true,
+        },
+      ];
     },
   },
 };
