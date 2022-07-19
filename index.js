@@ -3,14 +3,14 @@ const { ApolloServer, gql } = require("apollo-server");
 
 const typeDefs = gql`
   type Query {
-    hello: String
+    hello: [String]
   }
 `;
 
 const resolvers = {
   Query: {
     hello: () => {
-      return "Hello World!";
+      return ["Hello World!", "Witaj świecie!", "Bonjour le monde!"];
     },
   },
 };
