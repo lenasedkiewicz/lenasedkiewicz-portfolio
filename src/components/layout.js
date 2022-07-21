@@ -1,6 +1,5 @@
 import React from "react"
 import MainMenu from "./MainMenu"
-// import "./layout.css"
 
 const Layout = ({ children }) => (
   <div>
