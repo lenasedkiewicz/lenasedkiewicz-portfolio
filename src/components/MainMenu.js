@@ -6,6 +6,11 @@ const MainMenuWrapper = styled.div`
     display: flex;
     background-color: rgb(3, 27, 77);
 `
+const MenuItem = styled(Link)`
+color: #fff;
+display: block;
+padding: 8px 16px;
+`
 
 const MainMenu = ()=> (
   <StaticQuery
@@ -30,10 +35,10 @@ const MainMenu = ()=> (
     `}
     render={props => (
     <MainMenuWrapper>
-        {props.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(item =>
-            <Link to={`/${item.object_slug}`} key={item.title}>
+        {props.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(item => (
+            <MenuItem to={`/${item.object_slug}`} key={item.title}>
                 {item.title}
-            </Link>)}
+            </MenuItem>))}
     </MainMenuWrapper>
     )}
   />
