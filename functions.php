@@ -14,3 +14,5 @@ function create_custom_portfolio_post_type(){
                     ));
     add_post_type_support('portfolio', array('thumbnail', 'excerpt'));
 }
+
+add_action('init', 'create_custom_portfolio_post_type');
