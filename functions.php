@@ -12,4 +12,5 @@ function create_custom_portfolio_post_type(){
                         'show_in_admin_bar' => true,
                         'show_in_rest' => true
                     ));
+    add_post_type_support('portfolio', array('thumbnail', 'excerpt'));
 }
