@@ -1,6 +1,7 @@
 <?php
 add_theme_support( 'custom-logo' );
 add_theme_support( 'menus' );
+add_theme_support( 'post-thumbnails' );
 
 function create_custom_portfolio_post_type(){
     register_post_type('portfolio',
@@ -9,6 +10,7 @@ function create_custom_portfolio_post_type(){
                             'name' => __('Portfolio'),
                              'singular_name' => __('Portfolio')
                         ),
+                        'public' => true,
                         'show_in_admin_bar' => true,
                         'show_in_rest' => true
                     ));
