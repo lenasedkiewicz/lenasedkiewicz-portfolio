@@ -7,10 +7,20 @@ const MainMenuWrapper = styled.div`
   display: flex;
   background-color: rgb(3, 27, 77);
 `
+
+const MainMenuInner = styled.div`
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  width: 960px;
+  height: 100%;
+`
+
 const MenuItem = styled(Link)`
   color: #fff;
   display: block;
   padding: 8px 16px;
+  margin: auto 0;
 `
 
 const MainMenu = () => (
@@ -34,6 +44,7 @@ const MainMenu = () => (
     `}
     render={props => (
       <MainMenuWrapper>
+        <MainMenuInner>
         <SiteInfo />
         {props.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(
           item => (
@@ -42,6 +53,7 @@ const MainMenu = () => (
             </MenuItem>
           )
         )}
+        </MainMenuInner>
       </MainMenuWrapper>
     )}
   />
