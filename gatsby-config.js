@@ -47,7 +47,9 @@ module.exports = {
           "**/taxonomies",
           "**/users",
           "**/menus",
-          "**/portfolio"
+          "**/portfolio",
+          "**/logo",
+          "**/favicon"
         ],
       },
     },
