@@ -22,6 +22,9 @@ export default ({ pageContext }) => (
     {pageContext.posts.map(post => (
       <div key={post.node.wordpress_id}>
         <h3 dangerouslySetInnerHTML={{ __html: post.node.title }} />
+        <small>
+            {post.node.date}
+        </small>
         <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
       </div>
     ))}
