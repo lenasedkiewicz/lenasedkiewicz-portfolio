@@ -26,6 +26,10 @@ export default ({ pageContext }) => (
             {post.node.date}
         </small>
         <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
+        <div>
+            <Link to={`/${post.node.slug}`}>
+            Read more</Link>
+        </div>
       </div>
     ))}
     <Pagination>
