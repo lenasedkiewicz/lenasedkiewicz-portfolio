@@ -149,7 +149,12 @@ exports.createPages = ({ graphql, actions }) => {
 
             Array.from({length: numberOfPages}).forEach((page, index) => {
               createPage({
-                path: `/blog/${index + 1}`
+                path: index === 0 ? '/blog/' : `/blog/${index + 1}`,
+                context: {
+                  posts: posts.slice(index * postsPerPage, (index * postsPerPage) + postsPerPage),
+                  numberOfPages,
+                  currentPage: index + 1
+                }
               })
             })
 
