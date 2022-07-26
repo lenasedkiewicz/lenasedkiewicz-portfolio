@@ -161,6 +161,14 @@ exports.createPages = ({ graphql, actions }) => {
               })
             })
 
+            const pageTemplate = path.resolve("./src/templates/page.js")
+            _.each(posts, (post) => {
+              createPage({
+                path: `/post/${post.node.slug}`,
+                component: slash(pageTemplate),
+                context: post.node
+              })
+            })
             resolve()
         })
       })
