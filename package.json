@@ -1,0 +1,51 @@
+{
+  "name": "wordpress-starter",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby & WordPress",
+  "version": "0.1.0",
+  "author": "Tom Phillips <info@tomphill.co.uk>",
+  "dependencies": {
+    "babel-plugin-styled-components": "^2.0.7",
+    "gatsby": "^2.19.38",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-manifest": "^2.6.1",
+    "gatsby-plugin-netlify": "^2.11.1",
+    "gatsby-plugin-offline": "^3.10.2",
+    "gatsby-plugin-react-helmet": "^3.10.0",
+    "gatsby-plugin-sharp": "^2.14.4",
+    "gatsby-plugin-styled-components": "^3.10.0",
+    "gatsby-source-filesystem": "^1.4.8",
+    "gatsby-source-wordpress": "^6.19.0",
+    "gatsby-transformer-sharp": "^4.19.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "prettier": "2.1.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomphill/wordpress-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tomphill/wordpress-starter/issues"
+  },
+  "homepage": "https://github.com/tomphill/wordpress-starter#readme",
+  "main": "gatsby-browser.js"
+}
